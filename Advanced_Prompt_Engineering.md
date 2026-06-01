@@ -1,5 +1,4 @@
-# 🧠 Senior GenAI Engineer — File 1: Core Foundations
-## Advanced Prompt Engineering · Token & Context Management · Embeddings Deep Dive
+# Advanced Prompt Engineering · Token & Context Management · Embeddings Deep Dive
 
 > **Single-document reference.** Everything for these three topics is here — no other doc needed.  
 > **Assumed knowledge:** Python, basic LangChain familiarity, RAG concepts.
