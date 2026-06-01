@@ -1,4 +1,4 @@
-# 🤖 Senior GenAI Engineer — Agentic Systems
+# 🤖 Agentic Systems
 ## ReAct · Agentic Loops · LangGraph · MCP · Multi-Agent Orchestration
 
 > **For:** Building autonomous, self-reasoning AI agents that plan, act, reflect, and coordinate.  
