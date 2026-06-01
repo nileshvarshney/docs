@@ -1,4 +1,4 @@
-# 🛠️ Senior GenAI Engineer — Tool Use & Function Calling
+# 🛠️ Tool Use & Function Calling
 ## Complete Master Guide — Everything in One Document
 
 > **For:** Senior engineers building agentic systems, production agents, and LLM systems that interact with external tools.  
