@@ -470,7 +470,8 @@ These Snowflake features work **across accounts** within the same Organization:
 
 | Feature | Description | Requirement |
 |---|---|---|
-| **Replication Groups** | Replicate databases, shares, tasks, users, roles, policies, etc. to another account | Standard Edition+ |
+| **Replication Groups** | Replicate databases, shares to another account | Standard Edition+ |
+| **Replication Groups** | Replicate databases, shares, tasks, users, roles, policies, etc. to another account | Business Critical+ |
 | **Failover Groups** | Full account object replication + ability to promote secondary → primary for DR | Standard Edition+ |
 | **Cross-Region Data Sharing** | Share live data to consumers in a different region via auto-replicated shares | Standard Edition+ |
 | **Cross-Cloud Auto-Fulfillment** | Marketplace listings auto-replicated to consumer's cloud/region | Marketplace provider |
