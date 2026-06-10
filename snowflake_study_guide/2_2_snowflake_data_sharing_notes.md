@@ -511,6 +511,15 @@ The provider retains absolute power to revoke access at any time. Removing a con
 
 ---
 
+| Sharing Scenario | Regional & Cloud Boundary | Best Option (Recommended) | Alternate Option | Why the Best Option Wins |
+| :--- | :--- | :--- | :--- | :--- |
+| **Same Organization** *(Internal Accounts)* | **Same Cloud + Same Region** *(e.g., AWS East to AWS East)* | **Direct Share (SQL)** | Private Listing | **Immediate & Free:** Zero data copying required. Sharing metadata maps instantly across accounts via pure SQL with absolutely zero data transit latency or network egress costs. |
+| **Same Organization** *(Internal Accounts)* | **Cross-Cloud or Cross-Region** *(e.g., AWS East to Azure Asia)* | **Direct SQL Replication Groups** | Private Listing with Auto-fulfillment | **Full Automation:** Can be managed completely as infrastructure-as-code (Terraform) and programmatically triggered via orchestration tools (like Airflow or Prefect) directly after your ETL run finishes. |
+| **Different Organizations** *(External Companies)* | **Same Cloud + Same Region** *(e.g., AWS East to AWS East)* | **Direct Share (SQL)** | Private Listing | **Simplicity:** The fastest, zero-latency way to grant direct read-only access to an external partner's database view if you happen to sit in the exact same cloud datacenter region. |
+| **Different Organizations** *(External Companies)* | **Cross-Cloud or Cross-Region** *(e.g., AWS East to Azure Asia)* | **Private Listing with Auto-fulfillment** | Legacy Multi-Account Replication + Direct Share | **Security & Governance Boundary:** You do not have permissions to run direct administrative SQL sync scripts across an external enterprise's infrastructure. Private listings act as a clean, automated delivery broker managed safely by Snowflake. |
+| **Sharing with Non-Snowflake Users** *(External Vendors)* | **Any Cloud or Region** | **Managed Reader Accounts** | Traditional ETL Export (S3/Blob Storage) | **Keeps Data Governed:** You provision a restricted, read-only Snowflake cluster engine inside your own account infrastructure for them. They query your live data via web UI/BI tools without you ever losing control of the physical data files. |
+| **Commercial Monetization** *(Public Market)* | **Global Scale (All Clouds/Regions)** | **Public Marketplace Listing** | Private Listing with Custom Contracts | **Mass Scale & Billing Built-in:** Exposes your dataset as a commercial product catalog visible to every Snowflake consumer worldwide, with automated usage tracking and unified procurement/billing handled natively by Snowflake. |
+
 ## 📚 Reference Links
 
 | Resource | URL |
