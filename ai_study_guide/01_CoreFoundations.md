@@ -535,7 +535,7 @@ def regression_test(
 
 ---
 
-## 1.6 Interview Q&A — Prompt Engineering
+## 1.6 Q&A — Prompt Engineering
 
 **Q: Zero-shot vs few-shot vs fine-tuning — when to use each?**
 > Zero-shot: No examples, just instructions. Fast, cheap, flexible. Use for well-defined tasks in training distribution. Few-shot: 3–10 in-context examples. Best for format consistency and covering specific edge cases. Costs extra tokens per request, but no training cost or deployment overhead. Fine-tuning: Bake behavior into model weights. Use when: (1) few-shot doesn't hit target accuracy despite iteration, (2) you need consistent domain-specific behavior at scale with shorter prompts, (3) latency is critical. Rule of thumb: always try prompt engineering first. Fine-tuning is 10–100× more expensive and less flexible to iterate on.
